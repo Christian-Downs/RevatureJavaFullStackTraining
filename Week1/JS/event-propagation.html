@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+    Event Propagation: describes what will happen in the event fo more than one EVENT LISTENER being triggered at the same time
+
+    2 dif types:
+    capturing: on the way down from the root element to the target (outermos-innermost)
+
+    bubbling: on the way up to the root element which is the DEFAULT ( innermost to the outermost)
+
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+</head>
+<body id="theBody" class="item">
+    
+    <div id="one_a" class="item">
+        <div id = "two" class="item">
+
+            <div id = "three_a" class="item">
+                <button id = "buttonOne" class = "item">one</button>
+            </div>
+
+            <div id = "three_b" class="item">
+
+                <button id="buttonTwo" class="item">two</button>
+
+                <button id="buttonThree" class="item">three</button>
+            </div>
+        </div>
+   </div>
+    <div id="one_b" class="item">
+
+    </div>
+
+    <script>
+        //we will put our event Listener script in here
+        // 1. put all of our tiems into an array called items
+        var items = document.querySelectorAll(".item");
+        // 2. create a for loop and iterate over our list of elements
+        for(let i =0; i<items.length; i++){
+            // 3. capture the element retrieved
+            var el = items[i];
+            
+            //4. add eventlistener to element
+            el.addEventListener("click",doSomething,true);
+            el.addEventListener("click",doSomething,false);
+            /*
+                The 3rd argument means do we want to listen to the event in the capturing phase AND the bubbling
+                phase, or just the bubbling phase?
+
+                If we don't fill in the 3rd param(aka, set it to false -- it's the default value), BUBBLING 
+                will be the phase that we listen for
+            */
+        }
+
+        function doSomething(e){
+                console.log(e.currentTarget.id)
+        }
+    </script>
+</body>
+</html>

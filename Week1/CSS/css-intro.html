@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Cascading Style Sheets</title>
+
+    <style>
+        /*
+            This is a multiline comment in CSS. All the code is write here will be.
+        */
+
+        body{
+            max-width: 800px;
+            font-family: fantasy , cursive;
+            margin: auto;
+        }
+        div{
+            font-size: xx-large;
+            color:aqua;
+            background-color: silver;
+            width:50%;
+            margin:auto;
+
+        }
+        #my-special-div{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            color:lime;
+            background-color: black;
+            padding-left: 30%;
+            border: 25px red solid;
+        }
+        .my-special-class{
+            color: pink;
+            font-size: xx-small;
+            padding-left:1.5%;
+            border: .1px brown solid;
+        }
+    </style>
+    <link rel = "stylesheets" href="./assets/css/styles.css">
+</head>
+<body>
+    <h1>Intro to CSS</h1>
+    <p>We have pretty good understanding of HTML so far, but it doesn't look to good to the user.
+        The browser applies default styling such as <code>Strong</code>, which makes text <strong>BOLD</strong>.
+
+        <em>But how do we make our content look nicer?</em>
+    </p>
+
+    <p>
+        <abbr title="Cascading Style Sheets">CSS</abbr> can be included in an html page in 3 ways:
+
+        <ol>
+            <li>Inline (with the <code>style</code> attribute. This is not preffered.</li>
+            <li>Using internal stylesheets (using the <code>style</code> element in the head.</li>
+            <li>Using external stylesheets</li>
+        </ol>
+
+            CSS rules are defined by key-vlaue pairs, separated by a colon ( : ).
+            <br>
+            <code style = "color:blueviolet">This is an example of the color rule.</code><br>
+            <span style="color: red;">Some more text here to demonstrate inline styling.</span>
+            <br><br>
+
+            <p>The above is an example of inline styling, the following is an axample of <b>inline styling</b></p>
+    </p>
+
+    <h2>Selectors</h2>
+    <div>
+        <p>
+            This is an example of how div divides and containerizes our code, so that styling is easier since we're 
+            selecting the container.
+        </p>
+    </div>
+
+    <h4>ID's and Selectors</h4>
+    <div id="my-special-div">
+        <p> We are able to select elements by MORE than just their tag (element selector)
+            we can give particular eleements special ID's and classes
+        </p>
+
+        <p class="my-special-class">This paragraph has a particular class we have named my-special-class. we can apply styuling to all elemetns with this particular class with a "."</p>
+    </div>
+
+    <div id="my-special-div">
+        <p>Test Test Test</p>
+    </div>
+</body>
+</html>

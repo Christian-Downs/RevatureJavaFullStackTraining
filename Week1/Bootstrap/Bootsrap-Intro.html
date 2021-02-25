@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Bootstrap</title>
+    <!--In head we will link to Bootstrap styling-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!--What is Bootstrap?
+            Bootstrap is a free front-end framework for faster and easier web-dev. It gives us HTML and CSS based design templates.
+            
+        What is Bootstrap CDN?
+            Bootstrap CDN is a public content delivery network. Users of Bootstrap can load CSS and JavaScript libraries remotely 
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+    </nav>
+    <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-4" style = "border: 1px black solid;">
+                <h2>Heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quos eos illo! Facere, at deserunt temporibus optio, esse voluptates laudantium eius nobis beatae asperiores dolor adipisci atque mollitia dignissimos ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores sequi commodi dignissimos ratione harum assumenda repellat, veniam at repudiandae non. Fugit, unde odio? Modi corporis provident saepe aliquid magni!
+                </p>
+
+                <button type= "button" class="btn btn-secondary" href = "#">View details</button>
+            </div>
+            <div class="col-md-4" style = "border: 1px black solid;">
+                <h2>Heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus facilis aliquam quibusdam, amet eum? Fugiat doloribus, culpa dolor sapiente odio molestiae aperiam illum earum, unde eos, numquam in obcaecati.                
+                </p>
+                <a class="btn btn-secondary" href="https:www.example.com" target = "_blank">View details</a>
+            </div>
+            <div class="col-md-4" style = "border: 1px black solid;">
+                <h2>Heading</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quos eos illo! Facere, at deserunt temporibus optio, esse voluptates laudantium eius nobis beatae asperiores dolor adipisci atque mollitia dignissimos ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt asperiores sequi commodi dignissimos ratione harum assumenda repellat, veniam at repudiandae non. Fugit, unde odio? Modi corporis provident saepe aliquid magni!
+                </p>
+                <button type= "button" class="btn btn-secondary">View details</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
