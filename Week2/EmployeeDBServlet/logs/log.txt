@@ -1,0 +1,75 @@
+2021-03-04 10:00:10 WARN  EmployeeDAOImpl:36 - Unable to insert user
+org.postgresql.util.PSQLException: The column index is out of range: 0, number of columns: 4.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:65)
+	at org.postgresql.core.v3.SimpleParameterList.setStringParameter(SimpleParameterList.java:128)
+	at org.postgresql.jdbc.PgPreparedStatement.bindString(PgPreparedStatement.java:996)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:326)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:313)
+	at com.revature.repositories.EmployeeDAOImpl.insert(EmployeeDAOImpl.java:28)
+	at com.revature.services.EmployeeService.insert(EmployeeService.java:12)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:61)
+2021-03-04 10:01:21 WARN  EmployeeDAOImpl:36 - Unable to insert user
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at com.revature.repositories.EmployeeDAOImpl.insert(EmployeeDAOImpl.java:32)
+	at com.revature.services.EmployeeService.insert(EmployeeService.java:12)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:61)
+2021-03-04 10:04:56 WARN  EmployeeDAOImpl:36 - Unable to insert user
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at com.revature.repositories.EmployeeDAOImpl.insert(EmployeeDAOImpl.java:32)
+	at com.revature.services.EmployeeService.insert(EmployeeService.java:12)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:61)
+2021-03-04 10:25:39 WARN  EmployeeDAOImpl:36 - Unable to insert user
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 13
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:132)
+	at com.revature.repositories.EmployeeDAOImpl.insert(EmployeeDAOImpl.java:32)
+	at com.revature.services.EmployeeService.insert(EmployeeService.java:12)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:61)
+2021-03-04 10:26:46 WARN  EmployeeDAOImpl:76 - Unable to retrieve all users
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:106)
+	at com.revature.repositories.EmployeeDAOImpl.findAll(EmployeeDAOImpl.java:65)
+	at com.revature.services.EmployeeService.findAll(EmployeeService.java:20)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:63)
+2021-03-04 11:09:40 WARN  EmployeeDAOImpl:76 - Unable to retrieve all users
+org.postgresql.util.PSQLException: ERROR: relation "employee" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:143)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:106)
+	at com.revature.repositories.EmployeeDAOImpl.findAll(EmployeeDAOImpl.java:65)
+	at com.revature.services.EmployeeService.findAll(EmployeeService.java:20)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:63)

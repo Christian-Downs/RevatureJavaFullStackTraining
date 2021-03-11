@@ -1,0 +1,61 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	<!-- DTD stands for Documnet type definition -->
+	<!-- What is XML?
+		 XML Stands for eXtensible Markup Language
+		it's a markup language that defines a set of rule for encoding documents that
+		is both human and machine readable 
+		 -->
+<!-- Here we are defining the biernate configuration class object 
+which defines the properties of the session needed to communicate with out DB -->		 
+
+<!-- The most important file in a Hibernate based app in the hibernate.cfg.xml file
+It must be in your src/main/resources folder. -->
+<hibernate-configuration>
+	
+	<session-factory>
+	
+		<!-- JDBC properties -->
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">postgres</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://database-1.c2dsygckfbmi.us-east-2.rds.amazonaws.com:5432/postgres?currentSchema=hibernateschema</property>
+		
+		
+		<!-- Driver properties -->
+		
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+		
+		
+		<!-- Connection pool properties: (default size of connections is 20)-->
+		<property name="hibernate.connection.pool_size">10</property>
+		
+		<!-- hbm2ddl.auto this is a special property that exports schema DDL to the database when the SessionFactory is created. -->
+		<property name="hibernate.hbm2ddl.auto">validate</property>
+		<!-- CREATE, VALIDATE, UPDATE, NONE -->
+		
+		<!-- CREATE: drops all existing tables and objects with the names provided in annotations, 
+		and then hibernate will recreate the schema for us (CREATE isn't the best for production, but useful for development -->
+		
+		<!-- UPDATE: hiberante will not delete anything, but only add to the schema if there are objects that haven't been included yet-->
+		
+		<!-- VALIDATRE: best for production. checks to make sure that everything is as expected (all tables and objects are where they're
+		supposed to be -->
+		
+		<!-- NONE: hibernate will not do anything (no removals, no addition) -->
+
+		
+		
+		<!-- Class mapping occurs here: -->		
+		
+		<mapping class="com.revature.models.Crime"/>
+		<mapping class="com.revature.models.SuperVillain"/>
+		<mapping class="com.revature.models.SuperPrison"/>
+		
+	</session-factory>
+</hibernate-configuration>
