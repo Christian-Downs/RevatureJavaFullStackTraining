@@ -12,6 +12,9 @@ import jdk.internal.org.jline.utils.Log;
 
 public class EmployeeService {
 	private static Logger log = Logger.getLogger(EmployeeService.class);
+	
+	
+	//This class depends on the DAO
 	public static EmployeeDAO eDao = new EmployeeDAOImpl();
 	public static boolean insert(Employee e) {
 		return eDao.insert(e);

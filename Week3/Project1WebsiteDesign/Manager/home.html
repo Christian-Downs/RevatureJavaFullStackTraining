@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.998.0" data-gr-ext-installed="">
+
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+            </div>
+            <button type="button" class="btn btn-info">Logout</button>
+        </div>
+    </nav>
+	<div class="jumbotron text-center">
+        <h1 id = "header">Welcome Tom</h1>
+    </div>
+	
+	<div class="container-full px-lg-4">
+        <div id = "example-table" ></div>
+        
+  
+        <br>
+        
+        <div class="row justify-content-center">
+            <div class="btn-group btn-group-toggle container-xl " data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input name="options" type = "radio" checked onclick="AllReimbursements()">All Reimbursments
+                </label>
+                <label class="btn btn-secondary">
+                    <input name="options" type = "radio" onclick="AllPendingReimbursements()">All Pending Reimbursments
+                </label>
+                <label class="btn btn-secondary">
+                    <input type = "radio"  name = "options" onclick="AllUnapprovedReimbursements()">All Unapproved Reimbursments
+                </label>
+                <label class="btn btn-secondary">
+                    <input type = "radio"  name="options" onclick="AllApprovedReimbursements()">All Approved Reimbursments
+                </label>
+            </div>
+        </div>
+	</div>
+
+
+
+    <div class="container">
+        <h1 class="text-center">Reimbursement Info</h1>
+        <!-- <div id = "infoSpot">
+            Select a reimbursement to show here.
+        </div> -->
+        <div id = "infoSpot">
+            <div class="row">
+                <div class="col-sm-4 float-right" style = "background-color: beige;">
+                    <span class="float-right">id:</span>
+                </div>
+                <div class="col-sm-8" style="background-color: aqua;">
+                    <span class="float-left">2</span> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+	<script type="text/javascript" src="scripts/home.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</body>
+</html>

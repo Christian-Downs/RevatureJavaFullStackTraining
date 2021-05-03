@@ -1,0 +1,33 @@
+<h2>My Cats</h2>
+<!-- <ul class="cats">
+    <li *ngFor = "let cat of cats" 
+        [class.selected] = "cat===selectedCat" 
+        (click) = "onSelect(cat)">  
+        <span class="box">{{ cat.id }}</span> {{ cat.name }}
+    </li>
+</ul> -->
+
+<div>
+    <label for="new-cat">Cat Name:</label>
+    <input id="new-cat" #catName>
+
+    <button class="add-button" (click) = "add(catName.value)">Add cat</button>
+</div>
+
+<ul class="cats">
+    <li *ngFor="let cat of allCats">
+
+        <a routerLink = "/detail/{{cat.id}}"> <span class="box">{{ cat.id }}</span> {{ cat.name }} </a>
+        <button class="delete" title="Delete Cat" (click)="delete(cat)">X</button>
+    </li>
+</ul>
+
+<app-cat-detail></app-cat-detail>
+<!--<h3>{{cat.name | uppercase}} Details: </h3>
+
+<div><span>id: {{cat.id}}</span></div>
+
+<div>
+    <label for="name">Cat Name: </label>
+    <input id="name" [(ngModel)] ="cat.name" placeholder="something special">
+</div>-->

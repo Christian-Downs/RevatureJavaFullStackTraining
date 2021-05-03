@@ -1,0 +1,15 @@
+<p>cat-detail works!</p>
+
+
+<div *ngIf = "cat">
+    <h2>{{ cat.name}} Details:</h2>
+    <div><span>id:</span> {{cat.id}}</div>
+
+    <div>
+        <label for="cat-name">Cat name: </label>
+        <input id="cat-name" [(ngModel)] = "cat.name" placeholder="cat Name!">
+    </div>
+
+    <button (click) = 'goBack()'>Go Back</button>
+    <button (click) = 'save()'>Save Cat</button>'
+</div>

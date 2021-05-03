@@ -1,0 +1,20 @@
+<div class="allHeroes" >
+    <div class="panel-heading">
+        <span class="label label-defualt label-center">{{ title }}</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="list-group">
+            <div class="list-group-item">
+                <div *ngFor='let hero of heroes' class="list-group-item">
+                    <strong>ID</strong>: {{ hero.id }},
+                    <strong>Name</strong>: {{ hero.name }},
+                    <strong>Power</strong>: {{ hero.superPower }},
+                    <strong>Has Cape?</strong>: {{ (hero.hasCape) ? 'Yes': 'No' }}
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

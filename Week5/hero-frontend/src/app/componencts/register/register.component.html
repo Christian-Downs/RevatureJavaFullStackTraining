@@ -1,0 +1,25 @@
+<div >
+    <div class="panel-heading">
+        <span class="label label-default label-center">{{ title }}</span>
+    </div>
+
+    <div class="panel-body">
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="form-group">
+                    <input [(ngModel)]="hero.name" placeholder="Name" class="form-control">
+                    <input [(ngModel)]="hero.superPower" placeholder="SuperPower" class="form-control">
+                    <input [(ngModel)]="hero.hasCape" placeholder="Do they have a cape?" class="form-control" type="checkbox">
+                </div>
+
+                <div>
+                    <button class="btn btn-primary btn-center" (click)="registerHero()">Register hero</button>
+                </div>
+
+                <div>
+                    {{ message.message }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
